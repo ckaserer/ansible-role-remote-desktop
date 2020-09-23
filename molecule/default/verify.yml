@@ -1,0 +1,14 @@
+---
+  - name: Verify
+    hosts: all
+    become: true
+    tasks:
+      - name: Check nxserver is running
+        service:
+          name: nxserver
+          state: started
+          enabled: true
+        check_mode: true
+        register: nxserver
+        failed_when: nxserver.changed
+...

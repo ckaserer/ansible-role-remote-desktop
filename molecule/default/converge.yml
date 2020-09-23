@@ -1,0 +1,10 @@
+---
+  - name: Converge
+    hosts: all
+    tasks:
+      - name: "Include ansible-role-remote-desktop"
+        include_role:
+          name: "ansible-role-remote-desktop"
+          apply:
+            become: true
+...
