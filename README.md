@@ -6,15 +6,13 @@
 
 ---
 
-Either way we need to install the latest version of the desktop ansible role from ansible galaxy via
+Either way we need to install the latest version of the remote_desktop ansible role from ansible galaxy via
 
 ```
 ansible-galaxy install ckaserer.remote_desktop
 ```
 
 ---
-
-## Default
 
 The playbook below installs a desktop environment on all hosts.
 Alternativly you can set `hosts` to a group of ansible nodes or `localhost`.
