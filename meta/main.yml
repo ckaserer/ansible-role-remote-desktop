@@ -1,6 +1,6 @@
 ---
   galaxy_info:
-    role_name: remote-desktop
+    role_name: remote_desktop
     author: ckaserer
     description: "install a browser based remote desktop"
     company: "Gepardec IT Services GmbH"

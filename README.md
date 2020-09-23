@@ -9,7 +9,7 @@
 Either way we need to install the latest version of the desktop ansible role from ansible galaxy via
 
 ```
-ansible-galaxy install ckaserer.desktop
+ansible-galaxy install ckaserer.remote_desktop
 ```
 
 ---
@@ -23,9 +23,9 @@ Executing the role requires root privileges hence the additional `become: true` 
 ```
 - hosts: all
   tasks:
-    - name: "Include ckaserer.remote-desktop"
+    - name: "Include ckaserer.remote_desktop"
       include_role:
-        name: "ckaserer.remote-desktop"
+        name: "ckaserer.remote_desktop"
         apply:
           become: true
 ```
